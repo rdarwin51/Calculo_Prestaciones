@@ -81,7 +81,7 @@ namespace Calcule_Prest
             this.label14 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.cb_ciudad = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -97,13 +97,13 @@ namespace Calcule_Prest
             this.label5 = new System.Windows.Forms.Label();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cb_mun = new System.Windows.Forms.ComboBox();
+            this.cb_motivo = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cb_dep = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cb_solicitado = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -633,7 +633,7 @@ namespace Calcule_Prest
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.textBox7);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.comboBox6);
+            this.groupBox1.Controls.Add(this.cb_ciudad);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.textBox6);
             this.groupBox1.Controls.Add(this.label11);
@@ -649,13 +649,13 @@ namespace Calcule_Prest
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.comboBox5);
-            this.groupBox1.Controls.Add(this.comboBox4);
+            this.groupBox1.Controls.Add(this.cb_mun);
+            this.groupBox1.Controls.Add(this.cb_motivo);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label81);
-            this.groupBox1.Controls.Add(this.comboBox3);
+            this.groupBox1.Controls.Add(this.cb_dep);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cb_solicitado);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.ForeColor = System.Drawing.Color.RoyalBlue;
@@ -742,14 +742,14 @@ namespace Calcule_Prest
             this.label13.TabIndex = 24;
             this.label13.Text = "Empresa";
             // 
-            // comboBox6
+            // cb_ciudad
             // 
-            this.comboBox6.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(928, 46);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(167, 23);
-            this.comboBox6.TabIndex = 23;
+            this.cb_ciudad.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cb_ciudad.FormattingEnabled = true;
+            this.cb_ciudad.Location = new System.Drawing.Point(928, 46);
+            this.cb_ciudad.Name = "cb_ciudad";
+            this.cb_ciudad.Size = new System.Drawing.Size(167, 23);
+            this.cb_ciudad.TabIndex = 23;
             // 
             // label12
             // 
@@ -900,23 +900,28 @@ namespace Calcule_Prest
             this.checkBox1.Text = "Emp. Domestica";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // comboBox5
+            // cb_mun
             // 
-            this.comboBox5.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(547, 49);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(147, 23);
-            this.comboBox5.TabIndex = 7;
+            this.cb_mun.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cb_mun.FormattingEnabled = true;
+            this.cb_mun.Location = new System.Drawing.Point(547, 49);
+            this.cb_mun.Name = "cb_mun";
+            this.cb_mun.Size = new System.Drawing.Size(147, 23);
+            this.cb_mun.TabIndex = 7;
             // 
-            // comboBox4
+            // cb_motivo
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(545, 21);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(167, 23);
-            this.comboBox4.TabIndex = 6;
+            this.cb_motivo.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cb_motivo.FormattingEnabled = true;
+            this.cb_motivo.Items.AddRange(new object[] {
+            "Renuncia",
+            "Despido",
+            "Renocacio  de contrato",
+            "Otros"});
+            this.cb_motivo.Location = new System.Drawing.Point(545, 21);
+            this.cb_motivo.Name = "cb_motivo";
+            this.cb_motivo.Size = new System.Drawing.Size(167, 23);
+            this.cb_motivo.TabIndex = 6;
             // 
             // label8
             // 
@@ -940,14 +945,21 @@ namespace Calcule_Prest
             this.label81.TabIndex = 4;
             this.label81.Text = "Motivo";
             // 
-            // comboBox3
+            // cb_dep
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(168, 53);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(167, 23);
-            this.comboBox3.TabIndex = 3;
+            this.cb_dep.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cb_dep.FormattingEnabled = true;
+            this.cb_dep.Items.AddRange(new object[] {
+            "Cortes",
+            "Francisco Morazan",
+            "Choluteca",
+            "Olancho",
+            "EL Paraiso",
+            "Comayagua"});
+            this.cb_dep.Location = new System.Drawing.Point(168, 53);
+            this.cb_dep.Name = "cb_dep";
+            this.cb_dep.Size = new System.Drawing.Size(167, 23);
+            this.cb_dep.TabIndex = 3;
             // 
             // label4
             // 
@@ -960,14 +972,19 @@ namespace Calcule_Prest
             this.label4.TabIndex = 2;
             this.label4.Text = "Depto";
             // 
-            // comboBox1
+            // cb_solicitado
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(168, 24);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(99, 23);
-            this.comboBox1.TabIndex = 1;
+            this.cb_solicitado.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cb_solicitado.FormattingEnabled = true;
+            this.cb_solicitado.Items.AddRange(new object[] {
+            "Mi mismo",
+            "Familiar",
+            "Amigo",
+            "Abogado"});
+            this.cb_solicitado.Location = new System.Drawing.Point(168, 24);
+            this.cb_solicitado.Name = "cb_solicitado";
+            this.cb_solicitado.Size = new System.Drawing.Size(99, 23);
+            this.cb_solicitado.TabIndex = 1;
             // 
             // label2
             // 
@@ -989,6 +1006,7 @@ namespace Calcule_Prest
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -1019,12 +1037,12 @@ namespace Calcule_Prest
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb_solicitado;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cb_dep;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cb_mun;
+        private System.Windows.Forms.ComboBox cb_motivo;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label81;
         private System.Windows.Forms.CheckBox checkBox1;
@@ -1043,7 +1061,7 @@ namespace Calcule_Prest
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox cb_ciudad;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label11;

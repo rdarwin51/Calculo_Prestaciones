@@ -16,5 +16,17 @@ namespace Calcule_Prest
         {
             InitializeComponent();
         }
+        DataSet ds = new DataSet();
+        presdtacalc ps = new presdtacalc();
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            ps.Recup_Dep(cb_dep);
+        }
+
+        void llenar_comboM()
+        {
+            
+        }
     }
+
 }
